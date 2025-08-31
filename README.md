@@ -16,5 +16,5 @@ Nachher:
 5 Minuten Zeitscheiben und Ausreißer wurden eliminiert.
 <img width="1112" height="360" alt="image" src="https://github.com/user-attachments/assets/08f0322d-1f25-41d0-b76a-a20d795db7d6" />
 
-Am Knick kann man schön erkennen wo der Hausakku installiert wurde.
+Am Knick kann man schön erkennen wann der Hausakku installiert wurde.
 
