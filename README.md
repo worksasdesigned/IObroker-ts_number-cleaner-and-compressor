@@ -1,5 +1,7 @@
 # IObroker-ts_number-cleaner-and-compressor
 Kleines PHP Tool das millionen Werte nach Ausreißern durchsucht, und bereinigt. Zudem können Werte verdichtet werden.
+Es ist auch möglich 0 (VORSICHT kann ja auch richtig sein) bzw NULL Werte einer ID zu löschen.
+
 
 Beispiel:
 4.4 Millionen werte in der ts_number mit der id=102 (Stromzähler Werte). Da diese über das optische Auge am Zähler alle 10 Sekunden kamen, und sehr fehleranfällig sind (ca. 0.1% der Werte haben ein Fehlreading) habe ich einen kleinen Korrektur Report iobroker-cleaner gebastelt. Der cleaner kann mit diversen Parametern eine steigende Datenreihe nach Ausreißern durchsuchen und diese bereinigen. 
@@ -17,4 +19,6 @@ Nachher:
 <img width="1112" height="360" alt="image" src="https://github.com/user-attachments/assets/08f0322d-1f25-41d0-b76a-a20d795db7d6" />
 
 Am Knick kann man schön erkennen wann der Hausakku installiert wurde.
+
+
 
