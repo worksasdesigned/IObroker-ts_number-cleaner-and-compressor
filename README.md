@@ -16,12 +16,9 @@ Daten nach der Bereinigung der Ausreißer sowie Verdichtung auf 5 Minuten Interv
    - Trage deine MySQL-Verbindungsdaten ein
 
 2. **Dateien auf Webserver kopieren:**
-   - `data_cleaner.html`
-   - `data_cleaner.php` 
-   - `config.php`
 
 3. **Im Browser öffnen:**
-   - Navigiere zu `data_cleaner.html`
+   - Navigiere zu `index.html`
 
 ## 🛠️ Funktionen
 
@@ -31,7 +28,7 @@ Daten nach der Bereinigung der Ausreißer sowie Verdichtung auf 5 Minuten Interv
 - Schätzt Anzahl der fehlerhaften Datensätze
 
 ### 🧪 Testlauf  
-- Analysiert Datensätze in einem gewählten Zeitraum (max. 10.000)
+- Analysiert Datensätze in einem gewählten Zeitraum (max. 10.000 bzw Wert aus config.php)
 - Zeigt fehlerhafte Datensätze rot hervorgehoben
 - **Löscht KEINE Daten** - nur Simulation
 
@@ -56,8 +53,8 @@ Das Tool erkennt zwei Arten von Fehlern:
 In `config.php` können folgende Parameter angepasst werden:
 
 - **Datenbankverbindung:** Host, Benutzername, Passwort
-- **Fehlererkennung:** Schwellenwerte für zu starke Änderungen
-- **Performance:** Batch-Größe, Fortschrittsintervalle
+- **Fehlererkennung:** Schwellenwerte für zu starke Änderungen (bei meinem Strom zähler habe ich +-10 eingetragen)
+- **Performance:** Batch-Größe, Fortschrittsintervalle usw.
 
 ## 🔐 Sicherheit
 
