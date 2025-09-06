@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SQL Werkzeuge</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.5; margin: 0; color: #1f2937; background: #f9fafb; }
+    .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    .note { background: #fffbe6; border: 1px solid #fde68a; padding: 12px 14px; border-radius: 8px; margin: 12px 0 24px; }
+    .tools { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 760px) { .tools { grid-template-columns: 1fr 1fr; } }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; display: flex; flex-direction: column; gap: 12px; box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+    .card h2 { font-size: 20px; margin: 0; }
+    .card p { margin: 0; color: #374151; }
+    .actions { margin-top: auto; }
+    .button { display: inline-block; background: #2563eb; color: #fff; padding: 10px 14px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    .button:hover { background: #1d4ed8; }
+    footer { margin-top: 24px; font-size: 12px; color: #6b7280; text-align: center; }
+  </style>
+  <meta name="description" content="SQL Werkzeuge: Data Cleaner und Data Kompressor">
+</head>
+<body>
+  <div class="container">
+    <h1>SQL Werkzeuge</h1>
+    <p class="note">Hinweis: In den jeweiligen Ordnern liegen Konfigurationsdateien, mit denen man die Datenbank-Verbindung konfigurieren kann sowie die Parameter der jeweiligen Anwendung definiert.</p>
+
+    <div class="tools">
+      <section class="card">
+        <h2>Data Cleaner</h2>
+        <p>Der Data Cleaner ermöglicht es IDs der Tabelle <code>ts_number</code> zu bereinigen. Konkret geht es darum, Messfehler einer stetig steigenden Wertereihe (z. B. Stromzähler) auf Ausreißer zu kontrollieren und diese zu löschen.</p>
+        <div class="actions">
+          <a class="button" href="./iobroker-cleaner/">Öffnen</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Data Kompressor</h2>
+        <p>Der Data Kompressor ermöglicht es, die gesammelten Messdaten in Zeitscheiben zu komprimieren. So können Millionen Messwerte in Durchschnittswerte zusammengepackt werden (z. B. alle 5 Minuten, jede Stunde, …).</p>
+        <div class="actions">
+          <a class="button" href="./iobroker-compressor/">Öffnen</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Data Deletor</h2>
+        <p>Prüfe die Tabelle <code>ts_number</code> auf 0-, NULL- und leere Werte und lösche diese selektiv nach ID und Zeitraum.</p>
+        <div class="actions">
+          <a class="button" href="./iobroker-deletor/">Öffnen</a>
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2025</footer>
+  </div>
+</body>
+</html>
+
