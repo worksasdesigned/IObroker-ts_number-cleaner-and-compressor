@@ -1,4 +1,4 @@
-# Datenbankbereinigung - Stromzähler
+# Datenbankbereinigung - (z.B. Stromzähler readings)
 
 Ein PHP-Tool zur Bereinigung fehlerhafter Sensordaten in der MySQL-Datenbank. Speziell die tabelle ts_number von IOBROKER.
 VORSICHT: das Tool löscht hart auf der Datenbank die fehlerhaften Werte (Testlauf und Vorabanalyse jeweils vorhanden). Mach ein Backup!
